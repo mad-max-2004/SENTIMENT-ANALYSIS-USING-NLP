@@ -74,6 +74,8 @@ Precision, Recall, F1 Score:
 
 Confusion Matrix:
 
+![Image](https://github.com/user-attachments/assets/e5fff568-949e-4ac5-aeaf-bfa5ae51cd23)
+
 
 
 
