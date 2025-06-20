@@ -12,63 +12,70 @@
 
 *MENTOR*: NEELA SANTHOSH
 
-*TASK-2*
+# TASK-2
 
-*DESCRIPTION*:
+# DESCRIPTION :
 
-This project performs sentiment analysis using Natural Language Processing (NLP) techniques. It classifies IMDb movie reviews as either positive or negative using TF-IDF vectorization and Logistic Regression.
+# IMDb Movie Review Sentiment Analysis
 
-->Dataset:
-Source: IMDB Dataset.csv,
-Size: 50,000 reviews
+This project performs **Sentiment Analysis** on IMDb movie reviews using **Natural Language Processing (NLP)** techniques. It classifies reviews as **positive** or **negative** by applying **TF-IDF vectorization** and a **Logistic Regression** model.
 
-Columns:
+# Dataset
 
-review: Raw text review
+- **Source**: `IMDB Dataset.csv`
+- **Size**: 50,000 movie reviews
+- **Columns**:
+  - `review`: Raw text of the movie review
+  - `sentiment`: Sentiment label — `positive` or `negative`
 
-sentiment: Label - either positive or negative
+# Objective
 
-->Objective:
-To build an NLP model that can predict the sentiment of a movie review using TF-IDF and Logistic Regression.
+To build a machine learning model that can predict whether a movie review is **positive** or **negative** using NLP techniques.
 
-Technologies & Tools:
-Python,
-Pandas, NumPy ,
-Seaborn, Matplotlib ,
-Scikit-learn ,
-Regular Expressions
+# Technologies & Libraries
 
-->Workflow:
+- **Python**
+- **Pandas**, **NumPy**
+- **Scikit-learn**
+- **Seaborn**, **Matplotlib**
+- **Regular Expressions**
 
-1. Text Preprocessing :
-Converted all text to lowercase
+# Workflow
 
-Removed punctuation, digits, and extra whitespace
+# 1.Text Preprocessing
+- Converted all text to **lowercase**
+- Removed **punctuation, digits, and extra whitespace**
+- Mapped sentiment labels to **binary values** (`positive` → 1, `negative` → 0)
 
-Mapped sentiment labels to binary values: positive → 1, negative → 0
+# 2.Vectorization
+- Used **TF-IDF Vectorizer** to convert text into numerical features
+- Limited vocabulary to **top 5000 most relevant words**
 
-2. Vectorization :
-Applied TF-IDF Vectorizer to convert text into numerical feature vectors
+# 3.Modeling
+- Applied **Logistic Regression** for binary classification
+- Split data: **80% for training**, **20% for testing**
 
-Limited to top 5000 most relevant words
+# 4.Evaluation
+- Achieved **accuracy of 89.3%**
+- Displayed a **classification report** (precision, recall, F1-score)
+- Visualized results using a **confusion matrix**
 
-3. Modeling :
-Used Logistic Regression as the classification algorithm
+# Results
 
-Trained on 80% of the dataset and tested on 20%
+- **Model Accuracy**: `0.893`
+- Strong performance in distinguishing between positive and negative sentiments
 
-4. Evaluation :
-Achieved an accuracy of ~89.3%
+# Future Enhancements
 
-Displayed Classification Report (Precision, Recall, F1-Score)
+- Experiment with **deep learning models** like LSTM or BERT
+- Implement **hyperparameter tuning** for better performance
+- Deploy as a **web app** using Streamlit or Flask
 
-Visualized Confusion Matrix
+# Contact
 
-->Results 
+For questions or feedback, feel free to reach out at **[Your Email]** or connect on **[LinkedIn]**.
 
-Accuracy: 0.893
-
-#OUTPUT :
+# OUTPUT :
 
 Precision, Recall, F1 Score:
 
